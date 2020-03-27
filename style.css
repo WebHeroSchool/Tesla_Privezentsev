@@ -29,3 +29,26 @@
       font-weight: 700;
       font-style: normal;
   }
+
+  body {
+	  font-family: montserrat ;
+	  margin: 0;
+  }
+
+.header {
+	min-width: 320px;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: stretch;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+  .logo {
+	  position: absolute;
+  }
+
