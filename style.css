@@ -1,54 +1,115 @@
-  @font-face {
-      font-family: montserrat;
-      src: url("/fonts/Montserrat-Regular.otf"),
-           url("/fonts/Montserrat-Regular.ttf");
-      font-weight: 400;
-      font-style: normal;
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/Montserrat-Regular.otf"),
+         url("fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
   }
 
-    @font-face {
-      font-family: montserrat;
-      src: url("/fonts/Montserrat-Medium.otf"),
-           url("/fonts/Montserrat-Medium.ttf");
-      font-weight: 500;
-      font-style: normal;
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/Montserrat-Medium.otf"),
+         url("fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+  } 
+
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/Montserrat-SemiBold.otf"),
+         url("fonts/Montserrat-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
   }
 
-    @font-face {
-      font-family: montserrat;
-      src: url("/fonts/Montserrat-SemiBold.otf"),
-           url("/fonts/Montserrat-SemiBold.ttf");
-      font-weight: 600;
-      font-style: normal;
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/Montserrat-Bold.otf"),
+         url("fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
   }
 
-    @font-face {
-      font-family: montserrat;
-      src: url("/fonts/Montserrat-Bold.otf"),
-           url("/fonts/Montserrat-Bold.ttf");
-      font-weight: 700;
-      font-style: normal;
-  }
-
-  body {
+body {
 	  font-family: montserrat ;
-	  margin: 0;
+	  margin: 0 auto;
+	  width: 100%;
+	  height: 100%;
   }
-
-.header {
-	min-width: 320px;
-	max-width: 1440px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: stretch;
-}
 
 a{
 	color: #000000;
 	text-decoration: none;
 }
 
+/* HEADER */
+
+.header {
+	background: #fff;
+	max-width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 30px;
+	padding: 0 40px 0 40px;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: stretch;
+}
+
+  .header-logo {
+	  display: flex;
+	  align-items: center;
+	  margin-right: 50px;
+	  right: 200px;
+  } 
+
   .logo {
-	  position: absolute;
+	  display: block;
+	  top: 40px;
   }
 
+  .header-models {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  padding-top: 5px;
+	  margin-right: 50px;
+	  margin-left: 50px;
+	  line-height: 18px;
+  }
+
+  .model-one {
+	  color: #E51937;
+	  margin-right: 15px;
+	  background: url(img/line-red.png) no-repeat;
+	  background-position: bottom;
+  }
+
+  .model {
+	  margin-right: 15px;
+  }
+
+  .header-menu {
+	  display: flex;
+	  justify-content: space-between;
+	  padding-top: 5px;
+	  padding-left: 20px;
+	  margin-left: 100px;
+	  align-items: center;
+  }
+
+  .header-menu__item {
+	  display: block;
+	  margin-right: 30px;
+  }
+
+  .burger {
+	 display: flex;
+	  align-items: center;
+  }
