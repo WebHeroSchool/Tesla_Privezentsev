@@ -31,7 +31,7 @@
   }
 
 body,html {
-  width: 100%;
+  width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
   }
@@ -48,13 +48,12 @@ a{
   background: #fff;
   font-weight: 600;
   font-style: normal;
-  max-width: 1920px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .header {
   margin-bottom: 42px;
-  padding-top: 24px;
+  padding: 5px 23px;
   display: flex;
   justify-content: space-between;
 	align-items: center;
@@ -65,15 +64,14 @@ a{
 .header-logo {
   display: flex;
   align-items: center;
-  margin-left: 3vw;
+  margin-right: 12vw;
 } 
 
 
 .header-models {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: 13vw;
+  margin-right: 12vw;
 }
 
 .model-one {
@@ -98,7 +96,6 @@ a{
 .header-menu {
   display: flex;
   align-items: center;
-  margin-right: 1vw;
 }
 
 .header-menu__item {
@@ -110,7 +107,8 @@ a{
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-right: 3vw;
+  margin-right: 1vw;
+  
 }
 
   /* КОНТЕНТ */
@@ -223,21 +221,17 @@ a{
 
 .second-floor {
   background-size: cover;
-  margin-bottom: 36px;
+  margin: 0;
 }
 
 .advantage-info {
-  display: flex;
-  position: absolute;
-  margin: 0 auto;
+  background: url(/img/2013-tesla-model-s-cockpit.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background-size: auto 100%;
+  width: 1548px;
+  flex-direction: row;
 }
 
-.advantage__bg {
-  position: absolute;
-}
 
 .bg__model {
   position: absolute;
