@@ -71,7 +71,7 @@ a{
 .header-models {
   display: flex;
   align-items: center;
-  margin-right: 12vw;
+  margin-right: 8vw;
 }
 
 .model-one {
@@ -213,11 +213,7 @@ a{
   background: #fff;
 }
 
-.swipe-down {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 36px;
-}
+
 
 .second-floor {
   background-size: cover;
@@ -225,22 +221,24 @@ a{
 }
 
 .advantage-info {
-  background: url(/img/2013-tesla-model-s-cockpit.png);
+  background: url(img/2013-tesla-model-s-cockpit.png);
   background-repeat: no-repeat;
   background-size: auto 100%;
-  width: 1548px;
   flex-direction: row;
 }
 
+.advantage__bg > img {
+  opacity: 0;
+  width: 1440px;
+}
 
 .bg__model {
-  position: absolute;
   color: #E51937;
   font-weight: 600;
   font-style: normal;
   font-size: 70px;
   letter-spacing: 0.3vw;
-  left: 87px;
+  padding-left: 3vw;
 }
 
 .info__description-advantage {
@@ -251,8 +249,8 @@ a{
   flex-flow: column;
   color: #fff;
   background: #E51937;
-
 }
+
 
 .safety-bg {
   background: #E51937;
