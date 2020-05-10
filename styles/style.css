@@ -49,10 +49,6 @@ a {
   padding-bottom: 10px;
 }
 
-.model-s__link:first-child {
-  margin-right: 5px;
-}
-
 .model:hover {
   color: #e51937;
   border-bottom: 2px solid;
@@ -292,7 +288,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  padding: 10px 43px; 
+  padding: 10px 43px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
