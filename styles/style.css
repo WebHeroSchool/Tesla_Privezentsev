@@ -2,15 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'montserrat';
-  }
+  font-family: 'montserrat', sans-serif;
+}
 
 a {
-	color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
-.wrapper  {
+.wrapper {
   width: 100%;
   height: 100%;
   min-width: 370px;
@@ -20,7 +20,7 @@ a {
 
 .header {
   margin-bottom: 31px;
-  white-space: nowrap;;
+  white-space: nowrap;
 }
 
 .nav {
@@ -45,17 +45,22 @@ a {
 }
 
 .model {
-  margin: 0 32px 6px 0;
+  margin: 0 24px 3px 18px;
+  padding-bottom: 10px;
+}
+
+.model-s__link:first-child {
+  margin-right: 5px;
 }
 
 .model:hover {
-  color: #E51937;
+  color: #e51937;
   border-bottom: 2px solid;
   padding: 0 0 6px 0;
 }
 
 .model-s__link {
-  color: #E51937;
+  color: #e51937;
   border-bottom: 2px solid;
   padding: 0 0 6px 0;
 }
@@ -75,7 +80,7 @@ a {
 }
 
 .header-menu__item:hover {
-  color: #E51937;
+  color: #e51937;
   border-bottom: 2px solid;
   padding: 0 0 6px 0;
 }
@@ -170,7 +175,7 @@ a {
 }
 
 .stat__test-drive {
-  width: 87px;
+  width: 102px;
   height: 0;
   margin-right: 115px;
   position: relative;
@@ -184,28 +189,28 @@ a {
 .stat__btn {
   position: relative;
   top: 11px;
-  right: 53px;
+  right: 69px;
 }
- 
+
 .btn__first-floor {
   text-transform: uppercase;
   display: block;
-  border: 2px solid #E51937;
-  color: #E51937;
+  border: 2px solid #e51937;
+  color: #e51937;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   letter-spacing: .5px;
   background: #fff;
-  padding: 10px 43px;
-  transition-duration: 0.4s;
+  padding: 10px 41px;
+  transition-duration: .4s;
   cursor: pointer;
 }
 
 .btn__first-floor:hover {
   color: #fff;
-  background: #E51937;
-  border-color: #E51937;
+  background: #e51937;
+  border-color: #e51937;
 }
 
 .swipe-down_btn {
@@ -228,10 +233,9 @@ a {
 }
 
 .top-title {
-  color: #E51937;
+  color: #e51937;
   font-size: 70px;
   font-weight: 600;
-  line-height: 85px;
   line-height: 85px;
   margin: 40px 0 0 40px;
 }
@@ -239,7 +243,7 @@ a {
 .info__description-advantage {
   max-width: 423px;
   color: #fff;
-  background: #E51937;
+  background: #e51937;
   padding: 55px 45px;
 }
 
@@ -290,7 +294,7 @@ a {
   display: block;
   padding: 10px 43px; 
   border: 2px solid #fff;
-  background: #E51937;
+  background: #e51937;
   cursor: pointer;
   transition-duration: .4s;
   margin-left: 18px;
@@ -298,17 +302,28 @@ a {
 
 .btn-info:hover {
   background: #fff;
-  color: #E51937;
+  color: #e51937;
 }
 
 .safety-info {
   display: flex;
+  background-image: url(../img/Model_S-1.png);
+  background-repeat: no-repeat;
+  background-position-x: 104%;
+  background-position-y: 25%;
+  background-size: 60%;
+}
+
+.safety-bg {
+  width: 100%;
+  background-image: url(../img/Car-frame-group.png);
+  background-repeat: no-repeat;
 }
 
 .rating-safety {
   width: 440px;
   color: #fff;
-  background: #E51937;
+  background: #e51937;
   padding: 55px 45px;
 }
 
@@ -329,7 +344,7 @@ a {
   padding-top: 15px;
 }
 
-.rating_title-text {
+.rating__title-text {
   font-size: 30px;
   font-weight: 600;
   line-height: 37px;
@@ -401,16 +416,16 @@ a {
   color: #fff;
   display: block;
   margin-left: 10px;
-  padding: 10px 43px; 
+  padding: 10px 43px;
   border: 2px solid #fff;
-  background: #E51937;
+  background: #e51937;
   cursor: pointer;
   transition-duration: .4s;
 }
 
 .btn-safety:hover {
   background: #fff;
-  color: #E51937;
+  color: #e51937;
 }
 
 .safety_car-frame {
@@ -420,23 +435,7 @@ a {
   right: 7vw;
 }
 
-.safety-img {
-  background-image: url(../img/Model_S-1.png);
-  background-repeat: no-repeat;
-  background-position-x: 104%;
-  background-position-y: 25%;
-  background-size: 85%;
-}
-
-.whs-img{
-  width: 94px;
-  position: relative;
-  top: 17vw;
-  left: 58vw;
-}
-
 @media screen and (max-width: 1080px) {
-
   .header-models {
     font-size: 12px;
   }
@@ -474,14 +473,9 @@ a {
     max-width: 100%;
     margin-top: 67%;
   }
-
-  .whs {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 950px) {
-
   .nav {
     display: flex;
     justify-content: space-between;
@@ -508,14 +502,11 @@ a {
   .params {
     display: flex;
     flex-flow: column;
+    padding: 0 100px 0 150px;
   }
 
   .stat-power {
     margin-right: 160px;
-  }
-
-  .params {
-    padding: 0 100px 0 150px;
   }
 
   .wrap-params-one {
@@ -535,13 +526,13 @@ a {
   }
 
   .btn__first-floor {
-    background-color: #E51937;
+    background-color: #e51937;
     color: #fff;
   }
 }
 
 @media screen and (max-width: 770px) {
-   .nav {
+  .nav {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -566,7 +557,6 @@ a {
 }
 
 @media screen and (max-width: 520px) {
-
   .nav {
     margin-bottom: 0;
     padding: 15px 11px;
@@ -619,7 +609,6 @@ a {
 }
 
 @media screen and (max-width: 375px) {
-
   .nav {
     padding: 15px 5px;
   }
@@ -662,7 +651,6 @@ a {
 }
 
 @media screen and (max-width: 270px) {
-
   .first-floor__item {
     background-position-y: 10%;
   }
