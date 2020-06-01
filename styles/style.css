@@ -249,7 +249,7 @@ a {
   height: 900px;
   color: #fff;
   background: #e51937;
-  padding: 0px 55px 101px 52px;
+  padding: 0 55px 101px 52px;
 }
 
 .description-advantage {
@@ -588,7 +588,7 @@ a {
   }
 
   .stars {
-    width: 80%%;
+    width: 80%;
   }
 
   .star-item {
