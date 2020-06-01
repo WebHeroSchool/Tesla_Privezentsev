@@ -13,7 +13,6 @@ a {
 .wrapper {
   width: 100%;
   height: 100%;
-  min-width: 370px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -230,18 +229,23 @@ a {
   background-size: contain;
 }
 
+.advantage-title {
+  width: 300px;
+  height: 115px;
+  margin: 64px 0 0 80px;
+}
+
 .top-title {
   color: #e51937;
   font-size: 70px;
   font-weight: 600;
   line-height: 85px;
-  margin: 64px 0 0 80px;
 }
 
 .info__description-advantage {
   display: flex;
   flex-direction: column;
-  max-width: 423px;
+  width: 423px;
   height: 900px;
   color: #fff;
   background: #e51937;
@@ -330,6 +334,7 @@ a {
 
 .safety-bg {
   background: url(../img/Model_S-1.png) no-repeat;
+  background-size: 81%;
   background-position: 110% 19%;
 }
 
@@ -345,10 +350,12 @@ a {
 }
 
 .rating-safety {
-  width: 463px;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
   color: #fff;
   background: #e51937;
-  padding: 50px 34px 0 58px;
+  padding: 50px 38px 0 57px;
 }
 
 .safety-text {
@@ -369,7 +376,7 @@ a {
 }
 
 .quality-rating {
-  margin-bottom: 88px;
+  margin-bottom: 17px;
 }
 
 .rating__title-text {
@@ -420,16 +427,17 @@ a {
 }
 
 .safety_info-btn {
-  width: 322px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 100%;
   margin-bottom: 59px;
+  margin-left: -16px;
   white-space: nowrap;
 }
 
 .safety-info__img {
-  margin-right: 21px;
+  margin-right: 4px;
   cursor: pointer;
 }
 
@@ -440,8 +448,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  padding: 10px 41px;
-  margin-right: -6px;
+  padding: 12px 41px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
@@ -480,11 +487,14 @@ a {
     background-position: top left;
   }
 
+  .advantage-title {
+    width: 870px;
+    margin-bottom: 54%;
+  }
+
   .top-title {
-    width: 100%;
     text-align: right;
-    padding-right: 205px;
-    margin-bottom: 58%;
+    padding-right: 52px;
   }
 
   .info__description-advantage {
@@ -496,12 +506,13 @@ a {
   }
 
   .description-advantage {
-    width: 45%;
+    width: 50%;
+    margin: 50px 0;
     padding-left: 35px;
   }
 
   .advantage-subtext {
-    width: 90%;
+    width: 306px;
     letter-spacing: .6px;
     height: 220px;
     margin: 0;
@@ -510,16 +521,93 @@ a {
   .image-advantage {
     justify-content: space-between;
     width: 38%;
+    margin: 0;
+    padding: 50px;
   }
 
   .advantage_info-btn {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
   }
 
   .safety-info {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .safety-bg {
+    background-size: 85%;
+    background-position: 50% 18%;
+    margin-bottom: 70px;
+  }
+
+  .safety-bg__img {
+    top: 55px;
+    right: 0;
+  }
+
+  .safety-car {
+    width: 95%;
+  }
+
+  .rating-safety {
     flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .description-safety {
+    width: 39%;
+    margin-right: 18%;
+    padding: 50px 0 50px 30px;
+  }
+
+  .safety-text {
+    width: 316px;
+  }
+
+  .safety-subtext {
+    width: 304px;
+    margin: 0;
+  }
+
+  .quality-rating {
+    width: auto;
+    height: 281px;
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  .rating__title-text {
+    width: 277px;
+  }
+
+  .stars {
+    width: 80%%;
+  }
+
+  .star-item {
+    width: auto;
+  }
+
+  .star-group {
+    width: 166px;
+    padding-left: 15px;
+  }
+
+  .rating_icon {
+    display: none;
+  }
+
+  .safety_info-btn {
+    width: auto;
+    margin: 0 auto;
+    padding-bottom: 35px;
   }
 }
 
@@ -577,6 +665,15 @@ a {
     background-color: #e51937;
     color: #fff;
   }
+
+  .advantage-title {
+    width: 688px;
+    margin-bottom: 51%;
+  }
+
+  .top-title {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -602,9 +699,22 @@ a {
   .first-floor__item {
     background-position-y: 19%;
   }
+
+  .advantage-title {
+    width: 546px;
+    margin-bottom: 45%;
+  }
+
+  .description-safety {
+    margin-right: 16%;
+  }
+
+  .stars {
+    width: auto;
+  }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 630px) {
   .nav {
     margin-bottom: 0;
     padding: 15px 11px;
@@ -654,9 +764,45 @@ a {
   .stat__btn {
     right: 80px;
   }
+
+  .description-advantage {
+    width: auto;
+    margin: 0 auto;
+    padding: 35px 0;
+  }
+
+  .advantage-title {
+    width: auto;
+    margin-bottom: 40%;
+  }
+
+  .top-title {
+    display: none;
+  }
+
+  .advantage_info-btn {
+    width: auto;
+  }
+
+  .image-advantage {
+    display: none;
+  }
+
+  .description-safety {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .safety-text {
+    width: 326px;
+  }
+
+  .quality-rating {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
   .nav {
     padding: 15px 5px;
   }
@@ -696,14 +842,56 @@ a {
   .stat__btn {
     left: 55px;
   }
+
+  .advantage-title {
+    margin-bottom: 35%;
+  }
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 370px) {
+  .advantage-title {
+    margin-bottom: 30%;
+  }
+
+  .description-advantage {
+    width: 100%;
+  }
+
+  .advantage-text {
+    width: 100%;
+    padding: 0 28px;
+  }
+
+  .advantage-subtext {
+    width: 100%;
+    padding: 10px 18px;
+  }
+
+  .advantage_info-btn {
+    display: none;
+  }
+
+  .safety_info-btn {
+    display: none;
+  }
+
+  .safety-text {
+    width: 100%;
+  }
+
+  .safety-subtext {
+    width: 100%;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 321px) {
   .first-floor__item {
     background-position-y: 10%;
   }
 
   .params {
+    width: auto;
     margin-left: 30px;
   }
 
@@ -731,5 +919,28 @@ a {
 
   .swipe-down {
     padding-top: 25px;
+  }
+
+  .advantage-title {
+    margin-bottom: 25%;
+  }
+
+  .advantage-text {
+    margin: 0 auto;
+    white-space: normal;
+  }
+
+  .advantage-subtext {
+    height: auto;
+    margin: 0 auto;
+    padding: 18px 27px 0;
+  }
+
+  .safety-text {
+    width: 100%;
+  }
+
+  .safety-subtext {
+    padding-right: 33px;
   }
 }
