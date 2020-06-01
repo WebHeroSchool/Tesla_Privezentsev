@@ -19,7 +19,7 @@ a {
 }
 
 .header {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   white-space: nowrap;
 }
 
@@ -213,6 +213,7 @@ a {
   position: relative;
   left: 8px;
   transition-duration: .9s;
+  outline: none;
 }
 
 .swipe-down_btn:hover {
@@ -224,8 +225,9 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   background-image: url(../img/2013-tesla-model-s-cockpit.png);
-  background-position: bottom left;
+  background-position: 0 100%;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .top-title {
@@ -233,38 +235,54 @@ a {
   font-size: 70px;
   font-weight: 600;
   line-height: 85px;
-  margin: 40px 0 0 40px;
+  margin: 64px 0 0 80px;
 }
 
 .info__description-advantage {
+  display: flex;
+  flex-direction: column;
   max-width: 423px;
+  height: 900px;
   color: #fff;
   background: #e51937;
-  padding: 55px 45px;
+  padding: 0px 55px 101px 52px;
+}
+
+.description-advantage {
+  margin: 55px 0 5px;
 }
 
 .advantage-text {
   font-size: 30px;
-  line-height: 37px;
+  line-height: 25px;
   font-weight: 600;
-  margin: 0;
+  margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .advantage-subtext {
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .image-advantage {
-  margin: 0 0 160px 0;
+  margin: 0 0 166px 0;
+}
+
+.advantage-display {
+  margin-bottom: 32px;
+}
+
+.advantage-wifi {
+  margin-bottom: 20px;
 }
 
 .advantage_info-btn {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   white-space: nowrap;
 }
 
@@ -272,13 +290,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 28px;
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
+  cursor: pointer;
 }
 
 .info-btn__img {
-  margin-right: 5px;
+  margin-right: 13px;
+  cursor: pointer;
 }
 
 .btn-info {
@@ -288,12 +309,12 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  padding: 10px 43px;
+  padding: 10px 41px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
   transition-duration: .4s;
-  margin-left: 18px;
+  margin-left: 6px;
 }
 
 .btn-info:hover {
@@ -303,24 +324,31 @@ a {
 
 .safety-info {
   display: flex;
-  background-image: url(../img/Model_S-1.png);
-  background-repeat: no-repeat;
-  background-position-x: 104%;
-  background-position-y: 25%;
-  background-size: 60%;
+  flex-direction: row-reverse;
+  position: relative;
 }
 
 .safety-bg {
-  width: 100%;
-  background-image: url(../img/Car-frame-group.png);
-  background-repeat: no-repeat;
+  background: url(../img/Model_S-1.png) no-repeat;
+  background-position: 110% 19%;
+}
+
+.safety-bg__img {
+  position: relative;
+  z-index: 1;
+  right: 97px;
+  top: 171px;
+}
+
+.safety-car {
+  width: 107%;
 }
 
 .rating-safety {
-  width: 440px;
+  width: 463px;
   color: #fff;
   background: #e51937;
-  padding: 55px 45px;
+  padding: 50px 34px 0 58px;
 }
 
 .safety-text {
@@ -340,12 +368,16 @@ a {
   padding-top: 15px;
 }
 
+.quality-rating {
+  margin-bottom: 88px;
+}
+
 .rating__title-text {
   font-size: 30px;
   font-weight: 600;
   line-height: 37px;
   font-style: normal;
-  margin: 0;
+  margin-bottom: 26px;
 }
 
 .stars {
@@ -362,7 +394,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .star-item span {
@@ -380,28 +412,25 @@ a {
 .rating_icon {
   width: 280px;
   height: 90px;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+}
+
+.rating_icon-img {
+  padding-left: 8px;
 }
 
 .safety_info-btn {
-  width: 319px;
+  width: 322px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 59px;
   white-space: nowrap;
 }
 
-.safety_info-text {
-  font-size: 13px;
-  font-weight: 600;
-  font-style: normal;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .safety-info__img {
-  margin-right: 5px;
+  margin-right: 21px;
+  cursor: pointer;
 }
 
 .btn-safety {
@@ -411,8 +440,8 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  margin-left: 10px;
-  padding: 10px 43px;
+  padding: 10px 41px;
+  margin-right: -6px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
@@ -422,13 +451,6 @@ a {
 .btn-safety:hover {
   background: #fff;
   color: #e51937;
-}
-
-.safety_car-frame {
-  width: 100%;
-  position: relative;
-  top: 14vw;
-  right: 7vw;
 }
 
 @media screen and (max-width: 1080px) {
@@ -451,7 +473,9 @@ a {
   }
 
   .advantage-info {
-    max-width: 1200px;
+    display: block;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     background-position: top left;
   }
@@ -459,15 +483,43 @@ a {
   .top-title {
     width: 100%;
     text-align: right;
-    margin-right: 50px;
+    padding-right: 205px;
+    margin-bottom: 58%;
   }
 
   .info__description-advantage {
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .description-advantage {
+    width: 45%;
+    padding-left: 35px;
+  }
+
+  .advantage-subtext {
+    width: 90%;
+    letter-spacing: .6px;
+    height: 220px;
+    margin: 0;
+  }
+
+  .image-advantage {
     justify-content: space-between;
-    flex-wrap: nowrap;
-    max-width: 100%;
-    margin-top: 67%;
+    width: 38%;
+  }
+
+  .advantage_info-btn {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+  .safety-info {
+    flex-wrap: wrap;
   }
 }
 
