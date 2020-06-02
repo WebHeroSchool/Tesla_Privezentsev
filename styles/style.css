@@ -302,7 +302,7 @@ a {
 }
 
 .info-btn__img {
-  margin-right: 13px;
+  margin-right: 34px;
   cursor: pointer;
 }
 
@@ -437,7 +437,7 @@ a {
 }
 
 .safety-info__img {
-  margin-right: 4px;
+  margin-right: 34px;
   cursor: pointer;
 }
 
@@ -500,7 +500,8 @@ a {
   .info__description-advantage {
     flex-wrap: wrap;
     flex-direction: row;
-    width: auto;
+    justify-content: center;
+    width: 100%;
     height: auto;
     padding: 0;
   }
@@ -526,8 +527,7 @@ a {
   }
 
   .advantage_info-btn {
-    width: 50%;
-    margin: 0 auto;
+    width: auto;
     padding-bottom: 35px;
   }
 
@@ -556,7 +556,8 @@ a {
   .rating-safety {
     flex-wrap: wrap;
     flex-direction: row;
-    width: auto;
+    justify-content: center;
+    width: 100%;
     height: auto;
     padding: 0;
   }
@@ -577,10 +578,10 @@ a {
   }
 
   .quality-rating {
-    width: auto;
+    width: 34%%;
     height: 281px;
     margin: 0;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
 
   .rating__title-text {
@@ -588,7 +589,7 @@ a {
   }
 
   .stars {
-    width: 80%;
+    width: 104%%;
   }
 
   .star-item {
@@ -705,7 +706,16 @@ a {
     margin-bottom: 45%;
   }
 
+  .description-advantage {
+    padding-left: 20px;
+  }
+
+  .advantage-wifi {
+    max-width: 235px;
+  }
+
   .description-safety {
+    padding-left: 20px;
     margin-right: 16%;
   }
 
@@ -848,7 +858,7 @@ a {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
   .advantage-title {
     margin-bottom: 30%;
   }
@@ -885,14 +895,22 @@ a {
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 340px) {
   .first-floor__item {
     background-position-y: 10%;
   }
 
+  .title-text {
+    font-size: 30px;
+  }
+
+  .stat {
+    width: 100%;
+  }
+
   .params {
-    width: auto;
-    margin-left: 30px;
+    width: 100%;
+    margin-left: 15px;
   }
 
   .wrap-params-one {
