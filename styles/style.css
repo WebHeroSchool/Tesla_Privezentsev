@@ -302,7 +302,7 @@ a {
 }
 
 .info-btn__img {
-  margin-right: 34px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -318,7 +318,6 @@ a {
   background: #e51937;
   cursor: pointer;
   transition-duration: .4s;
-  margin-left: 6px;
 }
 
 .btn-info:hover {
@@ -448,7 +447,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  padding: 12px 41px;
+  padding: 10px 41px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
