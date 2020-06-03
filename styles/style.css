@@ -13,13 +13,12 @@ a {
 .wrapper {
   width: 100%;
   height: 100%;
-  min-width: 370px;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .header {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   white-space: nowrap;
 }
 
@@ -213,6 +212,7 @@ a {
   position: relative;
   left: 8px;
   transition-duration: .9s;
+  outline: none;
 }
 
 .swipe-down_btn:hover {
@@ -224,8 +224,15 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   background-image: url(../img/2013-tesla-model-s-cockpit.png);
-  background-position: bottom left;
+  background-position: 0 100%;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantage-title {
+  width: 300px;
+  height: 115px;
+  margin: 64px 0 0 80px;
 }
 
 .top-title {
@@ -233,38 +240,53 @@ a {
   font-size: 70px;
   font-weight: 600;
   line-height: 85px;
-  margin: 40px 0 0 40px;
 }
 
 .info__description-advantage {
-  max-width: 423px;
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+  height: 900px;
   color: #fff;
   background: #e51937;
-  padding: 55px 45px;
+  padding: 0 55px 101px 52px;
+}
+
+.description-advantage {
+  margin: 55px 0 5px;
 }
 
 .advantage-text {
   font-size: 30px;
-  line-height: 37px;
+  line-height: 25px;
   font-weight: 600;
-  margin: 0;
+  margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .advantage-subtext {
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .image-advantage {
-  margin: 0 0 160px 0;
+  margin: 0 0 166px 0;
+}
+
+.advantage-display {
+  margin-bottom: 32px;
+}
+
+.advantage-wifi {
+  margin-bottom: 20px;
 }
 
 .advantage_info-btn {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   white-space: nowrap;
 }
 
@@ -272,13 +294,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 28px;
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
+  cursor: pointer;
 }
 
 .info-btn__img {
-  margin-right: 5px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .btn-info {
@@ -288,12 +313,11 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  padding: 10px 43px;
+  padding: 10px 41px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
   transition-duration: .4s;
-  margin-left: 18px;
 }
 
 .btn-info:hover {
@@ -303,24 +327,34 @@ a {
 
 .safety-info {
   display: flex;
-  background-image: url(../img/Model_S-1.png);
-  background-repeat: no-repeat;
-  background-position-x: 104%;
-  background-position-y: 25%;
-  background-size: 60%;
+  flex-direction: row-reverse;
+  position: relative;
 }
 
 .safety-bg {
-  width: 100%;
-  background-image: url(../img/Car-frame-group.png);
-  background-repeat: no-repeat;
+  background: url(../img/Model_S-1.png) no-repeat;
+  background-size: 81%;
+  background-position: 110% 19%;
+}
+
+.safety-bg__img {
+  position: relative;
+  z-index: 1;
+  right: 97px;
+  top: 171px;
+}
+
+.safety-car {
+  width: 107%;
 }
 
 .rating-safety {
+  display: flex;
+  flex-direction: column;
   width: 440px;
   color: #fff;
   background: #e51937;
-  padding: 55px 45px;
+  padding: 50px 38px 0 57px;
 }
 
 .safety-text {
@@ -340,12 +374,16 @@ a {
   padding-top: 15px;
 }
 
+.quality-rating {
+  margin-bottom: 17px;
+}
+
 .rating__title-text {
   font-size: 30px;
   font-weight: 600;
   line-height: 37px;
   font-style: normal;
-  margin: 0;
+  margin-bottom: 26px;
 }
 
 .stars {
@@ -362,7 +400,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .star-item span {
@@ -380,28 +418,26 @@ a {
 .rating_icon {
   width: 280px;
   height: 90px;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+}
+
+.rating_icon-img {
+  padding-left: 8px;
 }
 
 .safety_info-btn {
-  width: 319px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 59px;
+  margin-left: -16px;
   white-space: nowrap;
 }
 
-.safety_info-text {
-  font-size: 13px;
-  font-weight: 600;
-  font-style: normal;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .safety-info__img {
-  margin-right: 5px;
+  margin-right: 34px;
+  cursor: pointer;
 }
 
 .btn-safety {
@@ -411,8 +447,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   display: block;
-  margin-left: 10px;
-  padding: 10px 43px;
+  padding: 10px 41px;
   border: 2px solid #fff;
   background: #e51937;
   cursor: pointer;
@@ -422,13 +457,6 @@ a {
 .btn-safety:hover {
   background: #fff;
   color: #e51937;
-}
-
-.safety_car-frame {
-  width: 100%;
-  position: relative;
-  top: 14vw;
-  right: 7vw;
 }
 
 @media screen and (max-width: 1080px) {
@@ -451,23 +479,135 @@ a {
   }
 
   .advantage-info {
-    max-width: 1200px;
+    display: block;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     background-position: top left;
   }
 
+  .advantage-title {
+    width: 870px;
+    margin-bottom: 54%;
+  }
+
   .top-title {
-    width: 100%;
     text-align: right;
-    margin-right: 50px;
+    padding-right: 52px;
   }
 
   .info__description-advantage {
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .description-advantage {
+    width: 50%;
+    margin: 50px 0;
+    padding-left: 35px;
+  }
+
+  .advantage-subtext {
+    width: 306px;
+    letter-spacing: .6px;
+    height: 220px;
+    margin: 0;
+  }
+
+  .image-advantage {
     justify-content: space-between;
-    flex-wrap: nowrap;
-    max-width: 100%;
-    margin-top: 67%;
+    width: 38%;
+    margin: 0;
+    padding: 50px;
+  }
+
+  .advantage_info-btn {
+    width: auto;
+    padding-bottom: 35px;
+  }
+
+  .safety-info {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .safety-bg {
+    background-size: 85%;
+    background-position: 50% 18%;
+    margin-bottom: 70px;
+  }
+
+  .safety-bg__img {
+    top: 55px;
+    right: 0;
+  }
+
+  .safety-car {
+    width: 95%;
+  }
+
+  .rating-safety {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .description-safety {
+    width: 39%;
+    margin-right: 18%;
+    padding: 50px 0 50px 30px;
+  }
+
+  .safety-text {
+    width: 316px;
+  }
+
+  .safety-subtext {
+    width: 304px;
+    margin: 0;
+  }
+
+  .quality-rating {
+    width: auto;
+    height: 281px;
+    margin: 0;
+    padding: 50px 0 0 0;
+  }
+
+  .rating__title-text {
+    width: 277px;
+  }
+
+  .stars {
+    width: 104%;
+  }
+
+  .star-item {
+    width: auto;
+  }
+
+  .star-group {
+    width: 166px;
+    padding-left: 15px;
+  }
+
+  .rating_icon {
+    display: none;
+  }
+
+  .safety_info-btn {
+    width: auto;
+    margin: 0 auto;
+    padding-bottom: 35px;
   }
 }
 
@@ -525,6 +665,15 @@ a {
     background-color: #e51937;
     color: #fff;
   }
+
+  .advantage-title {
+    width: 688px;
+    margin-bottom: 51%;
+  }
+
+  .top-title {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -550,9 +699,31 @@ a {
   .first-floor__item {
     background-position-y: 19%;
   }
+
+  .advantage-title {
+    width: 546px;
+    margin-bottom: 45%;
+  }
+
+  .description-advantage {
+    padding-left: 20px;
+  }
+
+  .advantage-wifi {
+    max-width: 235px;
+  }
+
+  .description-safety {
+    padding-left: 20px;
+    margin-right: 16%;
+  }
+
+  .stars {
+    width: auto;
+  }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 630px) {
   .nav {
     margin-bottom: 0;
     padding: 15px 11px;
@@ -602,9 +773,45 @@ a {
   .stat__btn {
     right: 80px;
   }
+
+  .description-advantage {
+    width: auto;
+    margin: 0 auto;
+    padding: 35px 0;
+  }
+
+  .advantage-title {
+    width: auto;
+    margin-bottom: 40%;
+  }
+
+  .top-title {
+    display: none;
+  }
+
+  .advantage_info-btn {
+    width: auto;
+  }
+
+  .image-advantage {
+    display: none;
+  }
+
+  .description-safety {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .safety-text {
+    width: 326px;
+  }
+
+  .quality-rating {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
   .nav {
     padding: 15px 5px;
   }
@@ -644,15 +851,65 @@ a {
   .stat__btn {
     left: 55px;
   }
+
+  .advantage-title {
+    margin-bottom: 35%;
+  }
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 375px) {
+  .advantage-title {
+    margin-bottom: 30%;
+  }
+
+  .description-advantage {
+    width: 100%;
+  }
+
+  .advantage-text {
+    width: 100%;
+    padding: 0 28px;
+  }
+
+  .advantage-subtext {
+    width: 100%;
+    padding: 10px 18px;
+  }
+
+  .advantage_info-btn {
+    display: none;
+  }
+
+  .safety_info-btn {
+    display: none;
+  }
+
+  .safety-text {
+    width: 100%;
+  }
+
+  .safety-subtext {
+    width: 100%;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 340px) {
   .first-floor__item {
     background-position-y: 10%;
   }
 
+  .title-text {
+    font-size: 30px;
+  }
+
+  .stat {
+    width: 100%;
+  }
+
   .params {
-    margin-left: 30px;
+    width: 100%;
+    margin-left: 15px;
   }
 
   .wrap-params-one {
@@ -679,5 +936,28 @@ a {
 
   .swipe-down {
     padding-top: 25px;
+  }
+
+  .advantage-title {
+    margin-bottom: 25%;
+  }
+
+  .advantage-text {
+    margin: 0 auto;
+    white-space: normal;
+  }
+
+  .advantage-subtext {
+    height: auto;
+    margin: 0 auto;
+    padding: 18px 27px 0;
+  }
+
+  .safety-text {
+    width: 100%;
+  }
+
+  .safety-subtext {
+    padding-right: 33px;
   }
 }
